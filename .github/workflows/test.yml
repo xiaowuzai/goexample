@@ -10,7 +10,6 @@ on:
     branches: [ "master" ]
 
 jobs:
-
   test:
     runs-on: ubuntu-latest
     services:
@@ -20,7 +19,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: 123456
           MYSQL_DATABASE: goexample
         options: >-
-           --health-cmd mysqladmin ping --silent
+          --health-cmd mysqladmin ping --silent
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
