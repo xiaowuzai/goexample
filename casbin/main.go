@@ -12,7 +12,7 @@ import (
 func main() {
 
 	configPath := "./configs/model.conf"
-	dsn := "root:123456@(localhost:3308)/goexample?charset=utf8&parseTime=true&loc=Local"
+	dsn := "root:123456@(127.0.0.1:3308)/goexample?charset=utf8&parseTime=true&loc=Local"
 
 	l := db.NewDBLogger("offline")
 	database, err := db.NewDB(dsn, l)
